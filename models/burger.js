@@ -15,11 +15,11 @@ var burger = {
 		});
 	},
 
-	updateOne: function(objColVals, condition, function(res){
+	updateOne: function(objColVals, condition, cb){
 		orm.updateOne('burgers', objColVals, condition, function(res){
 			cb(res);
 		});
-	})
+	}
 };
 
 
